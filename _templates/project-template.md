@@ -3,11 +3,11 @@ title: "Example"
 slug: project-template
 type: backend-system
 status: active
-version: 2
+version: 3
 repos: ["https://example.com/repo"]
-source_of_truth: "https://example.com/docs"
+source_of_truth: "https://example.com/repo"
 stack: ["python", "sqlite"]
-last_verified: 2026-01-15
+last_verified: 2026-10-26
 ---
 
 # Example
@@ -15,7 +15,7 @@ last_verified: 2026-01-15
 ## 1. Intent
 This template describes one project in a fixed shape.
 Use a slug matching the filename without extension.
-Goal is TBD (unverified, see Source Map)
+Goal is described by the project page.
 Scope covers purpose and users.
 
 ## 2. Non-Goals
@@ -37,7 +37,7 @@ Scope covers purpose and users.
 - Data stays within the listed repo.
 
 ## 5. Key Numbers
-No verified numbers yet — see Source Map.
+- 1 endpoint documented (source README, 2026-10-26, docs/index.md).
 
 ## 6. Engineering Discipline
 - Tests run with tests/test_app.py:suite.
@@ -58,4 +58,7 @@ No verified numbers yet — see Source Map.
 - Key Numbers checked.
 - Discipline confirmed.
 - Reproduce tried.
-No publish events yet.
+
+No external announcements recorded.
+
+Back to [README](../README.md).
