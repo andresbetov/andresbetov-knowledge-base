@@ -29,6 +29,7 @@ Agent entrypoint for this docs-only overview knowledge base.
 - Flat layout under projects with one file per slug.
 - Education lives in education.md at the repository root.
 - Certificates live in certificates.md at the repository root.
+- Writing lives in writing.md at the repository root.
 - Certificate rows carry result with scale and issue month and a verification link.
 - Filename must match frontmatter slug exactly.
 - Project pages use the full template; root content pages use title, slug and last_verified.
@@ -59,7 +60,7 @@ Agent entrypoint for this docs-only overview knowledge base.
 ## 7. Scope freeze
 
 - Project pages cover three slugs only with no expansion.
-- Education and certificates are the two root-level content pages.
+- Education, certificates and writing are the three root-level content pages.
 - Reserved for later: experience/.
 - Template changes require minor version bump.
 - Do not add folders beyond agreed scope.
