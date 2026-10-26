@@ -27,6 +27,7 @@ Agent entrypoint for this docs-only overview knowledge base.
 ## 4. File contract
 
 - Flat layout under projects with one file per slug.
+- Education lives in education.md at the repository root.
 - Filename must match frontmatter slug exactly.
 - Keep 8-section order immutable across project pages.
 - Summary budget applies to Sections 1 to 4.
@@ -54,7 +55,8 @@ Agent entrypoint for this docs-only overview knowledge base.
 
 ## 7. Scope freeze
 
-- V1 covers three slugs only with no expansion.
-- Reserved for later: experience/, education/.
+- Project pages cover three slugs only with no expansion.
+- Education is the only root-level content page.
+- Reserved for later: experience/.
 - Template changes require minor version bump.
 - Do not add folders beyond agreed scope.

@@ -10,10 +10,14 @@ This knowledge base is a public portfolio and the primary AI-agent context for m
 | Hierarchical Clustering Portfolio Selector | ml-research | python-3.11 | 2026-10-26 | [projects/hierarchical-clustering-portfolio-selector.md](projects/hierarchical-clustering-portfolio-selector.md) |
 | SP500 Dataset ML Pipeline | data-pipeline | python-3.12 | 2026-10-26 | [projects/sp500-dataset-ml-pipeline.md](projects/sp500-dataset-ml-pipeline.md) |
 
+## Education
+
+[education.md](education.md) covers the two Universidad ECCI credentials and their public verification links.
+
 ## Scope
 
-V1 covers 3 projects only; no additional projects are in scope for this version.
+Project coverage is limited to 3 entries and no additional projects are in scope for this version.
 
-Reserved for later: experience/, education/
+Reserved for later: experience/
 
 See [AGENTS.md](AGENTS.md) for contribution rules and [_templates/project-template.md](_templates/project-template.md) for the project entry format.
