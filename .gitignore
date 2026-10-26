@@ -1,0 +1,14 @@
+# .gitignore — andresbetov-knowledge-base (overview only, no artifacts)
+.venv/
+__pycache__/
+*.pyc
+*.parquet
+*.pkl
+*.joblib
+htmlcov/
+.coverage
+coverage.xml
+data/
+_scratch/
+*.log
+.DS_Store
