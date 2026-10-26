@@ -3,7 +3,7 @@ title: "SP500 Dataset ML Pipeline"
 slug: sp500-dataset-ml-pipeline
 type: data-pipeline
 status: active
-version: 1
+version: 2
 repos: ["https://github.com/andresbetov/sp500-dataset-ml-pipeline"]
 source_of_truth: "https://github.com/andresbetov/sp500-dataset-ml-pipeline"
 stack: ["python-3.12", "pandas", "xgboost", "scikit-learn", "pyarrow", "uv"]
@@ -73,17 +73,7 @@ Final state is v0.2.0 and the QLIKE edge is established under this protocol only
 3. Run `uv run python -m packages.ml.model.main` to train five folds and write results.
 4. Read `packages/ml/model/artifacts/results/evaluation_summary.json` for headline QLIKE; artifacts outrank charts.
 
-## 8. Limitations
-- Survivors only universe omits delisted names and biases long horizon returns up.
-- Calibration is rejected by Mincer-Zarnowitz and no predictive distribution exists.
-- Single seed with one locked 500 date window leaves uncertainty unestimated.
-- No economic test covers costs or P&L or value at risk.
-- No tail safety is established; deciles six to nine have higher QLIKE than HAR.
-- HAR is the only benchmark and no GARCH or ensemble is tested.
-- Fold 2 hit the round cap so convergence is not demonstrated.
-- Regime labels are hardcoded calendar buckets so regime tables are descriptive only.
-
-## 9. History
+## 8. History
 - Eight ADRs record the target and universe and coupling and verification decisions.
 - Model card added with intended use and standing caveats.
 - Locked holdout evaluated once on 2026-10-20.
