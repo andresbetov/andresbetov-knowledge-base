@@ -22,6 +22,10 @@ This knowledge base is a public portfolio and the primary AI-agent context for m
 
 [writing.md](writing.md) covers long-form technical work, including the engineering thesis behind Elara App.
 
+## Engineering
+
+[engineering.md](engineering.md) lists the engineering principles applied across the projects, with evidence links.
+
 ## Scope
 
 Project coverage is limited to 3 entries and no additional projects are in scope for this version.
