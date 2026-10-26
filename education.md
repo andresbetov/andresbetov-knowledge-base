@@ -1,3 +1,9 @@
+---
+title: "Education"
+slug: education
+last_verified: 2026-10-26
+---
+
 # Education
 
 Two credentials from Universidad ECCI in Bogota D.C. Colombia, forming a progression from software development practice to systems engineering.
