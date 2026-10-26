@@ -44,21 +44,21 @@ Source universe is survivors-only so delisted names are absent and returns skew 
 - Holdout is opt-in and locked before scoring.
 
 ## 5. Key Numbers
-- 37 model inputs split as 13 prices plus 4 volume plus 5 trend plus 15 volatility.
-- 53 shipped columns hold 37 inputs plus 16 extras.
-- Shipped snapshot holds 2669959 rows with 53 columns.
-- Raw source snapshot holds 2703531 rows and 472 tickers.
-- Raw span is 2000-01-03 to 2026-02-20.
-- Shipped span is 2000-04-04 to 2026-02-12 with 6504 dates.
-- Shipped ticker count in schema snapshot is 469.
-- Default fold count is 5 with 6 date blocks.
-- Reserved holdout holds 500 unique dates.
-- Validation tail holds 0.15 of floor-retained training rows.
-- Target floor is 1e-12 applied before log.
-- Early stopping waits 30 rounds on validation QLIKE.
-- HAR warm-up uses 21 dates and HAC lag uses 4.
-- Phase 5 renders 14 PNGs plus manifest.
-- Hermetic suite collects 270 tests and full suite collects 275.
+- 37 model inputs split as 13 prices plus 4 volume plus 5 trend plus 15 volatility (feature table, 2026-10-26, docs/reference/dataset-schema.md).
+- 53 shipped columns hold 37 inputs plus 16 extras (schema contract, 2026-10-26, docs/reference/dataset-schema.md).
+- Shipped snapshot holds 2669959 rows with 53 columns (dated snapshot, 2026-10-25, docs/reference/dataset-schema.md).
+- Raw source snapshot holds 2703531 rows and 472 tickers (ingestion census, 2026-10-20, docs/reports/model-performance-and-rigor.md).
+- Raw span is 2000-01-03 to 2026-02-20 (ingestion census, 2026-10-20, docs/reports/model-performance-and-rigor.md).
+- Shipped span is 2000-04-04 to 2026-02-12 with 6504 dates (dated snapshot, 2026-10-25, docs/reference/dataset-schema.md).
+- Shipped ticker count in schema snapshot is 469 (dated snapshot, 2026-10-25, docs/reference/dataset-schema.md).
+- Default fold count is 5 with 6 date blocks (protocol doc, 2026-10-26, docs/pipelines/model.md).
+- Reserved holdout holds 500 unique dates (protocol doc, 2026-10-26, docs/pipelines/model.md).
+- Validation tail holds 0.15 of floor-retained training rows (protocol doc, 2026-10-26, docs/pipelines/model.md).
+- Target floor is 1e-12 applied before log (protocol doc, 2026-10-26, docs/pipelines/model.md).
+- Early stopping waits 30 rounds on validation QLIKE (operations doc, 2026-10-26, docs/operations.md).
+- HAR warm-up uses 21 dates and HAC lag uses 4 (operations doc, 2026-10-26, docs/operations.md).
+- Phase 5 renders 14 PNGs plus manifest (artifact table, 2026-10-26, docs/operations.md).
+- Hermetic suite collects 270 tests and full suite collects 275 (CI gate doc, 2026-10-26, docs/operations.md).
 
 ## 6. Engineering Discipline
 - Tests run with hermetic suite before each change.
