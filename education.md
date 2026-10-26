@@ -6,27 +6,24 @@ last_verified: 2026-10-26
 
 # Education
 
-Two credentials from Universidad ECCI in Bogota D.C. Colombia, forming a progression from software development practice to systems engineering.
+Two credentials from Universidad ECCI in Bogotá D.C., Colombia, with public verification records.
 
 ## At a Glance
 
 | Credential | Institution | Conferred | Verification |
 | --- | --- | --- | --- |
-| Technologist in Software Development | Universidad ECCI | March 2024 | [Public record](https://wallet.xertify.co/certificates/8E2CFD29A001) |
-| Systems Engineer | Universidad ECCI | October 2026 | [Public record](https://wallet.xertify.co/certificates/8E2CFD29A008) |
+| Tecnólogo en Desarrollo Informático (Technologist in Software Development) | Universidad ECCI | 11 March 2024 | [Public record](https://wallet.xertify.co/certificates/8E2CFD29A001) |
+| Ingeniero de Sistemas (Systems Engineer) | Universidad ECCI | 09 October 2026 | [Public record](https://wallet.xertify.co/certificates/8E2CFD29A008) |
 
-## Technologist in Software Development
+## Tecnólogo en Desarrollo Informático
 
-- Conferred in March 2024 by Universidad ECCI in Bogota D.C.
-- First of the two credentials documented here; its public record is linked above.
-- Forms the practical base for the engineering degree below.
+- Record title: Tecnologías 2024 - 1.
+- Public record linked in the table above.
 
-## Systems Engineer
+## Ingeniero de Sistemas
 
-- Conferred in October 2026 by Universidad ECCI in Bogota D.C.
-- Second of the two credentials documented here; its public record is linked above.
-- Degree thesis: Guide for Creating a Microservices Architecture with a Best Practices Approach (2025), summarized in [writing.md](writing.md).
+- Record title: Profesionales 2026-1.
+- Degree thesis: [Guide for Creating a Microservices Architecture with a Best Practices Approach](writing.md) (2025).
+- Public record linked in the table above.
 
-## Relevance
-
-Both credentials underpin the project work documented in this knowledge base.
+Back to [README](README.md).
