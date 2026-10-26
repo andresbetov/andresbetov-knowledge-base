@@ -3,7 +3,7 @@ title: "Elara App"
 slug: elara-app
 type: backend-system
 status: active
-version: 1
+version: 2
 repos: ["https://github.com/elara-app/api-gateway", "https://github.com/elara-app/discovery-service", "https://github.com/elara-app/config-service", "https://github.com/elara-app/inventory-service", "https://github.com/elara-app/unit-of-measure-service"]
 source_of_truth: "https://github.com/elara-app"
 stack: ["java-21", "spring-boot", "spring-cloud", "eureka", "config-server"]
@@ -77,18 +77,7 @@ Goal is a readable reference implementation rather than a production deployment.
 4. Confirm seeds through the gateway with `curl` on `/api/v1/inventory/item/` and `/api/v1/uom/` and `/api/v1/uom/status/` expecting 10 and 5 and 3.
 5. Follow logs with `docker compose -f "$ELARA" logs -f` and stop with `docker compose -f "$ELARA" down` noting data is ephemeral.
 
-## 8. Limitations
-- Demo and not production: known dev credentials and no TLS and single registry (infra README, 2026-10-26, infra/README.md).
-- All state is ephemeral with no backup or persistence path (operations doc, 2026-10-26, infra/docs/operations.md).
-- Gateway has no auth and no rate limiting and no retry or circuit breaker (gateway README, 2026-10-26, api-gateway/README.md).
-- Gateway routing has no integration tests for predicates and StripPrefix (gateway README, 2026-10-26, api-gateway/README.md).
-- Inventory maps only 404 from the unit service and turns other failures into 500 (inventory README, 2026-10-26, inventory-service/README.md).
-- Unit service has no audit trail and does not enforce status usability on assignment (unit README, 2026-10-26, unit-of-measure-service/README.md).
-- Prod profiles are placeholders and schema uses ddl-auto instead of migrations (config README, 2026-10-26, centralized-configuration/README.md).
-- Vault loader skips existing paths and cannot repair drifted secrets (operations doc, 2026-10-26, infra/docs/operations.md).
-- Published latest tag floats and VERSION agreement is unchecked by CI (infra README, 2026-10-26, infra/README.md).
-
-## 9. History
+## 8. History
 - v1.3.1 published with five runtime services and two support repositories.
 - Source and published stacks split; the published OCI artifact pins image digests.
 - Vault bootstrap and config refresh bus added to the platform.
