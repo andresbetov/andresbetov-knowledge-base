@@ -3,7 +3,7 @@ title: "Hierarchical Clustering Portfolio Selector"
 slug: hierarchical-clustering-portfolio-selector
 type: ml-research
 status: active
-version: 1
+version: 2
 repos: ["https://github.com/andresbetov/hierarchical-clustering-portfolio-selector"]
 source_of_truth: "https://github.com/andresbetov/hierarchical-clustering-portfolio-selector"
 stack: ["python-3.11","numpy","pandas","scipy","scikit-learn","yfinance","uv"]
@@ -74,19 +74,7 @@ Final state is the current HEAD under package version v0.1.0; the v0.1.0 tag pre
 3. Run `uv run portfolio-run --walk-forward` to add out-of-sample section.
 4. Open `reports/technical-report.json` and compare the run id and per fold walk forward weights.
 
-## 8. Limitations
-- Dykstra projection is post hoc and can flatten hierarchy weights.
-- Not investable without costs and turnover and taxes and capacity.
-- The 12-ticker universe is a survivor set as of 2026 and not a point in time universe.
-- Depends on yfinance availability and adjustments and coverage.
-- Walk forward validates HRP only; 1/N and inverse volatility are benchmarks.
-- In sample diagnostics can look optimistic by construction.
-- Thresholds are not hyperparameter clean per ADR 007.
-- A fresh run produces different numbers and run id because the data window moves.
-- JSON report does not store the final in sample weight vector.
-- A run with zero usable assets fails during chart generation before the JSON report.
-
-## 9. History
+## 8. History
 - Numba kernels removed with 1e-12 numeric parity under ADR 004.
 - v0.1.0 tagged on 2026-09-09 with HRP engine and eight charts.
 - Filter thresholds recalibrated to 0.3 and 0.27 under ADR 007.
