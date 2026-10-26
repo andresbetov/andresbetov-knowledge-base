@@ -30,13 +30,13 @@ Goal is reproducible local orchestration with clear service boundaries and contr
 ## 3. Source Map
 | Area | Repo/Path | Entrypoint |
 | --- | --- | --- |
-| Gateway | https://github.com/elara-app/api-gateway | api-gateway/README.md:routes |
-| Discovery | https://github.com/elara-app/discovery-service | discovery-service/README.md:registry |
-| Config | https://github.com/elara-app/config-service | config-service/README.md:endpoints |
-| Inventory | https://github.com/elara-app/inventory-service | inventory-service/README.md:items |
-| Units | https://github.com/elara-app/unit-of-measure-service | unit-of-measure-service/README.md:catalog |
-| Central Config | https://github.com/elara-app/centralized-configuration | centralized-configuration/README.md:matrix |
-| Infra | https://github.com/elara-app/infrastructure | infra/docs/operations.md:stacks |
+| Gateway | https://github.com/elara-app/api-gateway | README.md:routes |
+| Discovery | https://github.com/elara-app/discovery-service | README.md:registry |
+| Config | https://github.com/elara-app/config-service | README.md:endpoints |
+| Inventory | https://github.com/elara-app/inventory-service | README.md:items |
+| Units | https://github.com/elara-app/unit-of-measure-service | README.md:catalog |
+| Central Config | https://github.com/elara-app/centralized-configuration | README.md:matrix |
+| Infra | https://github.com/elara-app/infrastructure | docs/operations.md:stacks |
 
 ## 4. System at a Glance
 - Edge gateway forwards inventory and unit traffic with StripPrefix routing.
