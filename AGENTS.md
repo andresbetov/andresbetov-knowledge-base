@@ -28,9 +28,9 @@ Agent entrypoint for this docs-only overview knowledge base.
 
 - Flat layout under projects with one file per slug.
 - Filename must match frontmatter slug exactly.
-- Keep 9-section order immutable across project pages.
+- Keep 8-section order immutable across project pages.
 - Summary budget applies to Sections 1 to 4.
-- Keep 10 blank lines per file for readability.
+- Keep 9 blank lines per file for readability.
 - Keep each project page at or under 148 lines by wc -l.
 - Validate frontmatter on every edit.
 
