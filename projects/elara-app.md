@@ -49,7 +49,12 @@ Goal is reproducible local orchestration with clear service boundaries and contr
 - Postgres holds runtime data in ephemeral tmpfs and Vault holds dev secrets.
 
 ## 5. Key Numbers
-No verified numbers yet — see Source Map.
+- 379 tests across 5 services as 128 inventory plus 229 unit plus 20 gateway plus 1 discovery plus 1 config (suite counts, 2026-10-26, org profile README).
+- 5 runtime services plus 2 support repositories (repositories table, 2026-10-26, org profile README).
+- Runtime ports are 8080 gateway plus 8081 inventory plus 8082 units plus 8761 discovery plus 8888 config (repositories table, 2026-10-26, org profile README).
+- Reference version is v1.3.1 on Java 21 with Spring Boot 3.5.6 and Spring Cloud 2025.0.0 (profile header, 2026-10-26, org profile README).
+- Coverage gates enforce 80 percent line plus 70 percent branch with 0 missed classes on inventory and units (engineering standards, 2026-10-26, org profile README).
+- Seed data holds 10 items plus 5 units plus 3 statuses (feature table, 2026-10-26, org profile README).
 
 ## 6. Engineering Discipline
 - Tests run with test profile and Maven wrapper through verify.
@@ -77,7 +82,7 @@ No verified numbers yet — see Source Map.
 - Intent drafted from platform docs.
 - Source Map added for services and config.
 - Glance reviewed for runtime boundaries.
-- Key Numbers left unverified pending measurement.
+- Key Numbers filled from org profile.
 - Discipline confirmed from contributor guides.
 - Reproduce aligned to org profile demo commands.
 - Limitations noted from current docs.
