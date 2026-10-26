@@ -14,6 +14,10 @@ This knowledge base is a public portfolio and the primary AI-agent context for m
 
 [education.md](education.md) covers the two Universidad ECCI credentials and their public verification links.
 
+## Certificates
+
+[certificates.md](certificates.md) lists verified certificates with their public verification links.
+
 ## Scope
 
 Project coverage is limited to 3 entries and no additional projects are in scope for this version.
