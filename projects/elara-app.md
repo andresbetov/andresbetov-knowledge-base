@@ -59,10 +59,11 @@ No verified numbers yet — see Source Map.
 - Gateway route edits coordinate with central config and infra checks.
 
 ## 7. Reproduce
-1. Open `centralized-configuration/README.md` and review profile matrix.
-2. Render `compose.yml` with `docker compose config --quiet` for static check.
-3. Query `config-service` with `curl` for inventory dev environment.
-4. Verify gateway with `curl` on swagger and item collection paths.
+1. Point `ELARA` at `oci://ghcr.io/elara-app/elara-demo:1.3.1` for the demo or at `infrastructure/compose.yml` for a source build and start with `docker compose -f "$ELARA" up -d --wait --wait-timeout 900`.
+2. For source builds needing dev secrets run `docker compose -f "$ELARA" --profile bootstrap up vault-loader`.
+3. Open `http://127.0.0.1:8080/swagger-ui.html` for the aggregated API surface.
+4. Confirm seed data through the gateway with `curl` plus `jq` on inventory item and uom and uom status collections expecting 10 and 5 and 3.
+5. Follow logs with `docker compose -f "$ELARA" logs -f` and stop with `docker compose -f "$ELARA" down` noting data is ephemeral.
 
 ## 8. Limitations
 - Prod profile files are sparse placeholders and not deployable.
@@ -78,6 +79,6 @@ No verified numbers yet — see Source Map.
 - Glance reviewed for runtime boundaries.
 - Key Numbers left unverified pending measurement.
 - Discipline confirmed from contributor guides.
-- Reproduce tried with static checks only.
+- Reproduce aligned to org profile demo commands.
 - Limitations noted from current docs.
 No publish events yet.
