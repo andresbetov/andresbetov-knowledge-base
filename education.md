@@ -25,7 +25,7 @@ Two credentials from Universidad ECCI in Bogota D.C. Colombia, forming a progres
 
 - Conferred in October 2026 by Universidad ECCI in Bogota D.C.
 - Second of the two credentials documented here; its public record is linked above.
-- Degree thesis: pending official record.
+- Degree thesis: Guide for Creating a Microservices Architecture with a Best Practices Approach (2025), summarized in [writing.md](writing.md).
 
 ## Relevance
 
