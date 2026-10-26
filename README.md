@@ -1,35 +1,30 @@
 # Andres Betov Knowledge Base
 
-This knowledge base is a public portfolio and the primary AI-agent context for my work; it provides overview only, with full details maintained in the source repositories.
+Public portfolio of Julian Andres Bermudez Tovar (Andres Betov): backend systems and applied data and ML work. Based in Bogotá D.C., Colombia. Contact: [GitHub profile](https://github.com/andresbetov).
+
+This knowledge base is the primary AI-agent context for the work; it provides an overview only, with full details maintained in the source repositories.
+
+Agents: read [AGENTS.md](AGENTS.md) before editing.
 
 ## Projects
 
-| Project | Type | Stack | last_verified | Link |
-|---|---|---|---|---|
-| Elara App | backend-system | java-21, spring-boot | 2026-10-26 | [projects/elara-app.md](projects/elara-app.md) |
-| Hierarchical Clustering Portfolio Selector | ml-research | python-3.11 | 2026-10-26 | [projects/hierarchical-clustering-portfolio-selector.md](projects/hierarchical-clustering-portfolio-selector.md) |
-| SP500 Dataset ML Pipeline | data-pipeline | python-3.12 | 2026-10-26 | [projects/sp500-dataset-ml-pipeline.md](projects/sp500-dataset-ml-pipeline.md) |
+| Project | What it is | Page |
+| --- | --- | --- |
+| Elara App | Spring Cloud reference platform for inventory and unit-of-measure services | [Project page](projects/elara-app.md) |
+| Hierarchical Clustering Portfolio Selector | HRP portfolio research engine with walk-forward validation | [Project page](projects/hierarchical-clustering-portfolio-selector.md) |
+| SP500 Dataset ML Pipeline | XGBoost volatility forecasting benchmarked against HAR-RV | [Project page](projects/sp500-dataset-ml-pipeline.md) |
 
-## Education
+## Reference
 
-[education.md](education.md) covers the two Universidad ECCI credentials and their public verification links.
-
-## Certificates
-
-[certificates.md](certificates.md) lists verified certificates with their public verification links.
-
-## Writing
-
-[writing.md](writing.md) covers long-form technical work, including the engineering thesis behind Elara App.
-
-## Engineering
-
-[engineering.md](engineering.md) lists the engineering principles applied across the projects, with evidence links.
+| Page | Covers |
+| --- | --- |
+| [Education](education.md) | Two Universidad ECCI credentials and verification links |
+| [Certificates](certificates.md) | EF SET C1 English certificate |
+| [Writing](writing.md) | Long-form thesis behind Elara App |
+| [Engineering](engineering.md) | Cross-project principles and evidence |
 
 ## Scope
 
-Project coverage is limited to 3 entries and no additional projects are in scope for this version.
+Current scope: three project pages and four reference pages. See [AGENTS.md](AGENTS.md) for the file contract and scope freeze.
 
-Reserved for later: experience/
-
-See [AGENTS.md](AGENTS.md) for contribution rules and [_templates/project-template.md](_templates/project-template.md) for the project entry format.
+Project page format: [_templates/project-template.md](_templates/project-template.md).
