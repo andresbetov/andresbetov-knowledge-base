@@ -3,7 +3,7 @@ title: "Example"
 slug: project-template
 type: backend-system
 status: active
-version: 1
+version: 2
 repos: ["https://example.com/repo"]
 source_of_truth: "https://example.com/docs"
 stack: ["python", "sqlite"]
@@ -50,12 +50,7 @@ No verified numbers yet — see Source Map.
 3. Check output against expected result.
 4. Record method and date for any number.
 
-## 8. Limitations
-- Coverage is partial until first verification.
-- Numbers are missing until measured.
-- Scope excludes items listed in Non-Goals.
-
-## 9. History
+## 8. History
 - Created from template.
 - Intent drafted.
 - Source Map added.
@@ -63,5 +58,4 @@ No verified numbers yet — see Source Map.
 - Key Numbers checked.
 - Discipline confirmed.
 - Reproduce tried.
-- Limitations noted.
 No publish events yet.
