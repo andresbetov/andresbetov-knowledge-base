@@ -30,7 +30,7 @@ Agent contract for this docs-only overview knowledge base. The human entrypoint 
 - Repository root holds README.md, AGENTS.md, LICENSE and .gitignore.
 - Approved folders are projects/ and _templates/ only.
 - Project pages live in projects/ with one file per slug.
-- Root content pages are education.md, certificates.md, writing.md and engineering.md.
+- Root content pages are education.md, certificates.md, writing.md, engineering.md and skills.md.
 - Project frontmatter keys in order: title / slug / type / status / version / repos / source_of_truth / stack / last_verified.
 - Root content frontmatter keys: title, slug, last_verified.
 - Filename must match frontmatter slug exactly.
@@ -63,6 +63,6 @@ Agent contract for this docs-only overview knowledge base. The human entrypoint 
 ## 7. Scope freeze
 
 - Project pages cover three slugs only with no expansion.
-- Education, certificates, writing and engineering are the four root content pages.
+- Education, certificates, writing, engineering and skills are the five root content pages.
 - Reserved for later: experience/; adding it requires a contract update.
 - Do not add folders beyond projects/ and _templates/.
