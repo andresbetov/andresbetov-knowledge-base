@@ -1,7 +1,7 @@
 ---
 title: "Education"
 slug: education
-last_verified: 2026-10-26
+last_verified: 2026-10-27
 ---
 
 # Education
@@ -23,7 +23,7 @@ Two credentials from Universidad ECCI in Bogotá D.C., Colombia, with public ver
 ## Ingeniero de Sistemas
 
 - Record title: Profesionales 2026-1.
-- Degree thesis: [Guide for Creating a Microservices Architecture with a Best Practices Approach](writing.md) (2025).
+- Degree thesis: [Guide for Creating a Microservices Architecture with a Best Practices Approach](writing.md) (2026).
 - Public record linked in the table above.
 
 Back to [README](README.md).
