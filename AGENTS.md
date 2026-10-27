@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Agent entrypoint for this docs-only overview knowledge base.
+Agent contract for this docs-only overview knowledge base. The human entrypoint is [README.md](README.md).
 
 ## 1. What this repo is
 
@@ -12,6 +12,7 @@ Agent entrypoint for this docs-only overview knowledge base.
 ## 2. Source-of-truth hierarchy
 
 - On conflict, frontmatter `source_of_truth` wins; KB is overview-only.
+- `source_of_truth` names the authoritative repository; the Source Map path and citation name the exact artifact.
 - Source repos outrank this KB for numbers and behavior.
 - Never invent numbers or dates or statuses.
 - Section 5 of project pages allows zero TBD entries.
@@ -19,42 +20,49 @@ Agent entrypoint for this docs-only overview knowledge base.
 
 ## 3. Navigation
 
-- Start at root README project table.
-- Open projects overview page by slug for detail.
-- Follow Source Map outward to source repos.
-- Do not bypass Source Map for facts.
+- Start at [README.md](README.md) and open the project page by slug.
+- Follow Source Map rows and inline citations outward to the source repositories.
+- `source_of_truth` is the repository authority; the Source Map path and inline citation identify the exact artifact.
+- Do not bypass the source repositories for facts.
 
 ## 4. File contract
 
-- Flat layout under projects with one file per slug.
+- Repository root holds README.md, AGENTS.md, LICENSE and .gitignore.
+- Approved folders are projects/ and _templates/ only.
+- Project pages live in projects/ with one file per slug.
+- Root content pages are education.md, certificates.md, writing.md, engineering.md and skills.md.
+- Project frontmatter keys in order: title / slug / type / status / version / repos / source_of_truth / stack / last_verified.
+- Root content frontmatter keys: title, slug, last_verified.
 - Filename must match frontmatter slug exactly.
-- Keep 8-section order immutable across project pages.
-- Summary budget applies to Sections 1 to 4.
-- Keep 9 blank lines per file for readability.
+- Project pages use the full template and keep 8-section order immutable.
+- Sections 1 to 4 stay within 45 body lines total.
+- Project pages and the template keep one blank line between blocks and before the final back link; root pages keep one blank line between blocks.
 - Keep each project page at or under 148 lines by wc -l.
-- Validate frontmatter on every edit.
+- Template changes bump the integer version in the template and all project pages in the same commit.
+- `version` is the page-format version, not the project release.
+- Templates are illustrative; freshness and TBD rules apply to content pages.
 
 ## 5. Content rules
 
-- English only in all pages.
+- English only in all pages; quoted source titles keep their original language.
 - Text only with no images and no diagrams and no fences.
 - Use relative links inside KB.
-- Use absolute https links for outward sources.
+- Use absolute https links for outward sources; localhost development URLs are exempt.
 - Keep no absolute filesystem paths and no secrets.
 - Keep no superlatives and no marketing claims.
-- Keep body lines under five commas each.
+- Cite repository-relative paths; for multi-repository projects prefix with the repository name.
+- Keep bullets to one sentence where possible.
 - Keep Reproduce to five steps max with inline backticks.
 
 ## 6. Freshness
 
-- Set last_verified to YYYY-MM-DD of UTC merge date.
-- Use merge date and not author date.
-- Mark pages older than 90 days as stale with banner.
-- Refresh stale pages from source repos before reuse.
+- Set last_verified to the UTC date the page was checked against its sources.
+- Mark pages older than 90 days with the exact banner `> Stale: last verified YYYY-MM-DD; refresh before reuse.`
+- Refresh stale pages from source repositories before reuse.
 
 ## 7. Scope freeze
 
-- V1 covers three slugs only with no expansion.
-- Reserved for later: experience/, education/.
-- Template changes require minor version bump.
-- Do not add folders beyond agreed scope.
+- Project pages cover three slugs only with no expansion.
+- Education, certificates, writing, engineering and skills are the five root content pages.
+- Reserved for later: experience/; adding it requires a contract update.
+- Do not add folders beyond projects/ and _templates/.
