@@ -32,7 +32,7 @@ Agents: read [AGENTS.md](AGENTS.md) before editing.
 | [Certificates](certificates.md) | EF SET C1 English certificate |
 | [Writing](writing.md) | Long-form thesis behind Elara App |
 | [Engineering](engineering.md) | Cross-project principles and evidence |
-| [Skills](skills.md) | Capabilities demonstrated by the projects and thesis |
+| [Skills](skills.md) | Capabilities and language levels from projects, thesis and verified records |
 
 ## Scope
 

@@ -6,7 +6,7 @@ last_verified: 2026-11-06
 
 # Skills
 
-Capabilities demonstrated by the project pages and the thesis, without proficiency ratings.
+Capabilities and language levels demonstrated by the project pages, the thesis and verified records, without self-assigned proficiency ratings.
 
 ## At a Glance
 
