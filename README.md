@@ -1,19 +1,41 @@
 # Andres Betov Knowledge Base
 
-This knowledge base is a public portfolio and the primary AI-agent context for my work; it provides overview only, with full details maintained in the source repositories.
+Public portfolio of Julian Andres Bermudez Tovar (Andres Betov): Systems Engineer (Universidad ECCI, October 2026) focused on backend engineering with a quantitative and data and ML edge. Based in Bogotá D.C., Colombia.
+
+Contact: [GitHub](https://github.com/andresbetov) / [LinkedIn](https://www.linkedin.com/in/andresbetov/) / [X](https://x.com/andresbetov) / [Email](mailto:info.andresbetov@gmail.com).
+
+This knowledge base is the entry point for AI-agent context on the work; it provides an overview only, with full details maintained in the source repositories.
+
+## At a Glance
+
+- Builds: Spring Cloud services and Python data and ML pipelines with reproducible runs.
+- Proof: three public projects, one DOI-backed thesis, two verified degrees and one language certificate.
+- Rigor: tests and CI in all three; coverage gates in Elara inventory and unit plus Clustering; ADRs in Clustering and SP500; one locked holdout in SP500.
+- Scope: reference and research work with no production users.
+- Open to: backend, microservices, fintech and AI-driven systems roles.
+
+Agents: read [AGENTS.md](AGENTS.md) before editing.
 
 ## Projects
 
-| Project | Type | Stack | last_verified | Link |
-|---|---|---|---|---|
-| Elara App | backend-system | java-21, spring-boot | 2026-10-26 | [projects/elara-app.md](projects/elara-app.md) |
-| Hierarchical Clustering Portfolio Selector | ml-research | python-3.11 | 2026-10-26 | [projects/hierarchical-clustering-portfolio-selector.md](projects/hierarchical-clustering-portfolio-selector.md) |
-| SP500 Dataset ML Pipeline | data-pipeline | python-3.12 | 2026-10-26 | [projects/sp500-dataset-ml-pipeline.md](projects/sp500-dataset-ml-pipeline.md) |
+| Project | What it is | Page |
+| --- | --- | --- |
+| Elara App | Spring Cloud reference platform for inventory and unit-of-measure services | [Project page](projects/elara-app.md) |
+| Hierarchical Clustering Portfolio Selector | HRP portfolio research engine with walk-forward validation | [Project page](projects/hierarchical-clustering-portfolio-selector.md) |
+| SP500 Dataset ML Pipeline | XGBoost volatility forecasting benchmarked against HAR-RV | [Project page](projects/sp500-dataset-ml-pipeline.md) |
+
+## Reference
+
+| Page | Covers |
+| --- | --- |
+| [Education](education.md) | Universidad ECCI credentials and Saber Pro 2025 positioning |
+| [Certificates](certificates.md) | EF SET C1 English certificate |
+| [Writing](writing.md) | Long-form thesis behind Elara App |
+| [Engineering](engineering.md) | Cross-project principles and evidence |
+| [Skills](skills.md) | Capabilities and language levels from projects, thesis and verified records |
 
 ## Scope
 
-V1 covers 3 projects only; no additional projects are in scope for this version.
+Current scope: three project pages and five reference pages. See [AGENTS.md](AGENTS.md) for the file contract and scope freeze.
 
-Reserved for later: experience/, education/
-
-See [AGENTS.md](AGENTS.md) for contribution rules and [_templates/project-template.md](_templates/project-template.md) for the project entry format.
+Project page format: [_templates/project-template.md](_templates/project-template.md).

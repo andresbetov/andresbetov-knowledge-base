@@ -3,11 +3,11 @@ title: "Example"
 slug: project-template
 type: backend-system
 status: active
-version: 1
+version: 5
 repos: ["https://example.com/repo"]
-source_of_truth: "https://example.com/docs"
+source_of_truth: "https://example.com/repo"
 stack: ["python", "sqlite"]
-last_verified: 2026-01-15
+last_verified: 2026-11-06
 ---
 
 # Example
@@ -15,7 +15,7 @@ last_verified: 2026-01-15
 ## 1. Intent
 This template describes one project in a fixed shape.
 Use a slug matching the filename without extension.
-Goal is TBD (unverified, see Source Map)
+Goal is described by the project page.
 Scope covers purpose and users.
 
 ## 2. Non-Goals
@@ -27,7 +27,7 @@ Scope covers purpose and users.
 | Area | Repo/Path | Entrypoint |
 | --- | --- | --- |
 | API | https://example.com/repo | src/app.py:main |
-| Docs | https://example.com/docs | docs/index.md:overview |
+| Docs | https://example.com/docs | docs/index.md#overview |
 | Tests | https://example.com/repo | tests/test_app.py:suite |
 
 ## 4. System at a Glance
@@ -37,12 +37,13 @@ Scope covers purpose and users.
 - Data stays within the listed repo.
 
 ## 5. Key Numbers
-No verified numbers yet — see Source Map.
+- 1 endpoint documented (source README, 2026-10-26, docs/index.md).
 
 ## 6. Engineering Discipline
 - Tests run with tests/test_app.py:suite.
 - Review happens before each publish.
 - Changes keep docs and code aligned.
+- Known gaps: name at least one limitation and its source.
 
 ## 7. Reproduce
 1. Open `docs/index.md` and read overview.
@@ -50,12 +51,7 @@ No verified numbers yet — see Source Map.
 3. Check output against expected result.
 4. Record method and date for any number.
 
-## 8. Limitations
-- Coverage is partial until first verification.
-- Numbers are missing until measured.
-- Scope excludes items listed in Non-Goals.
-
-## 9. History
+## 8. History
 - Created from template.
 - Intent drafted.
 - Source Map added.
@@ -63,5 +59,7 @@ No verified numbers yet — see Source Map.
 - Key Numbers checked.
 - Discipline confirmed.
 - Reproduce tried.
-- Limitations noted.
-No publish events yet.
+
+No external announcements recorded.
+
+Back to [README](../README.md).
