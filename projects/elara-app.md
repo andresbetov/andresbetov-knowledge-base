@@ -3,11 +3,11 @@ title: "Elara App"
 slug: elara-app
 type: backend-system
 status: active
-version: 3
+version: 5
 repos: ["https://github.com/elara-app/api-gateway", "https://github.com/elara-app/discovery-service", "https://github.com/elara-app/config-service", "https://github.com/elara-app/inventory-service", "https://github.com/elara-app/unit-of-measure-service", "https://github.com/elara-app/centralized-configuration", "https://github.com/elara-app/infrastructure", "https://github.com/elara-app/.github"]
 source_of_truth: "https://github.com/elara-app/.github"
 stack: ["java-21", "spring-boot", "spring-cloud", "eureka", "config-server"]
-last_verified: 2026-10-26
+last_verified: 2026-11-06
 ---
 
 # Elara App
@@ -18,8 +18,9 @@ Five runtime services plus two support repositories form one Docker Compose syst
 Gateway routes edge traffic to inventory and units through Eureka discovery.
 Config Server serves versioned non secret settings and Vault supplies dev credentials.
 RabbitMQ carries config refresh events and health gates order startup.
-Two delivery modes exist as a source build of nine Compose services and a published demo of ten Compose services.
+Two delivery modes exist as a source build and a published demo.
 Goal is a readable reference implementation rather than a production deployment.
+Solo design and implementation from 2025 to 2026.
 The engineering thesis behind it is listed in [writing.md](../writing.md).
 
 ## 2. Non-Goals
@@ -31,36 +32,36 @@ The engineering thesis behind it is listed in [writing.md](../writing.md).
 ## 3. Source Map
 | Area | Repo/Path | Entrypoint |
 | --- | --- | --- |
-| Gateway | https://github.com/elara-app/api-gateway | README.md:routes |
-| Discovery | https://github.com/elara-app/discovery-service | README.md:registry |
-| Config | https://github.com/elara-app/config-service | README.md:endpoints |
-| Inventory | https://github.com/elara-app/inventory-service | README.md:items |
-| Units | https://github.com/elara-app/unit-of-measure-service | README.md:catalog |
-| Central Config | https://github.com/elara-app/centralized-configuration | README.md:matrix |
-| Infra | https://github.com/elara-app/infrastructure | docs/operations.md:stacks |
-| Profile | https://github.com/elara-app/.github | profile/README.md:run-the-demo |
-| Inventory tests | https://github.com/elara-app/inventory-service | TESTING_GUIDE.md:suite |
-| Unit tests | https://github.com/elara-app/unit-of-measure-service | TESTING_GUIDE.md:suite |
+| Gateway | https://github.com/elara-app/api-gateway | README.md#runtime-architecture |
+| Discovery | https://github.com/elara-app/discovery-service | README.md#runtime-architecture |
+| Config | https://github.com/elara-app/config-service | README.md#api |
+| Inventory | https://github.com/elara-app/inventory-service | README.md#api |
+| Units | https://github.com/elara-app/unit-of-measure-service | README.md#api |
+| Central Config | https://github.com/elara-app/centralized-configuration | README.md#config-precedence |
+| Infra | https://github.com/elara-app/infrastructure | docs/operations.md#stack-inventory |
+| Profile | https://github.com/elara-app/.github | profile/README.md#run-the-demo |
+| Inventory tests | https://github.com/elara-app/inventory-service | TESTING_GUIDE.md#test-classes-and-styles |
+| Unit tests | https://github.com/elara-app/unit-of-measure-service | TESTING_GUIDE.md#test-inventory |
 
 ## 4. System at a Glance
 - Edge gateway uses explicit routes with StripPrefix 3 and a restricted locator.
-- Eureka registry is single node and in memory with no replication.
+- Decision: keep Eureka single node and in memory for a readable reference; this gives up replication and failover (discovery README, 2026-10-27, discovery-service/README.md#current-limitations).
 - Config Server serves profile files from the main branch on demand.
 - Precedence runs CLI then JVM then environment then config data then defaults.
 - Inventory owns item master data and validates unit ids over HTTP.
 - Unit service owns unit and status catalogs with no outbound calls.
 - Central configuration owns routes and the profile matrix and Vault paths.
 - Infra owns source and published Compose stacks with health gated startup.
-- Source stack runs nine Compose services and published demo runs ten because its Vault loader is default.
+- Source stack runs nine Compose services by default and ten with the bootstrap profile; the published demo runs ten.
 - State is ephemeral with tmpfs Postgres and in memory Vault.
-- Each business service owns its own Postgres database with no shared schema.
+- Decision: Vault serves dev credentials at runtime from tracked non-sensitive defaults and keeps production secrets out of Git; cost is a bootstrap step and a dev-only token (config doc, 2026-10-27, centralized-configuration/README.md#secrets).
+- Decision: database per service forces UOM checks over HTTP and rules out cross-service joins (profile, 2026-10-27, .github/profile/README.md).
 
 ## 5. Key Numbers
-- 379 documented tests as 128 inventory plus 229 unit plus 20 gateway plus 1 discovery plus 1 config (suite table, 2026-10-26, .github/profile/README.md).
+- 379 documented tests as 128 inventory plus 229 unit plus 20 gateway plus 1 discovery plus 1 config (profile suite summary, 2026-10-27, .github/profile/README.md).
 - Version 1.3.1 agrees across VERSION and five service poms (version script, 2026-10-26, infrastructure/scripts/check-release-version.sh).
 - Inventory and unit coverage gates enforce 80 percent line plus 70 percent branch with no class at zero coverage (plugin config, 2026-10-26, inventory-service/pom.xml and unit-of-measure-service/pom.xml).
-- Inventory JaCoCo reports 97.69 percent line and 77.78 percent branch (local artifacts, 2026-10-22, inventory-service/target/site/jacoco/jacoco.csv).
-- Unit service JaCoCo reports 100 percent line and branch (local artifacts, 2026-10-22, unit-of-measure-service/target/site/jacoco/jacoco.csv).
+- Local JaCoCo observations are 97.69 percent line and 77.78 percent branch for inventory and 100 percent for units on gate-included classes (local observation, 2026-10-26, inventory-service/target/site/jacoco/jacoco.csv and unit-of-measure-service/target/site/jacoco/jacoco.csv).
 - Seed data holds 10 items plus 5 units plus 3 statuses (feature table, 2026-10-26, .github/profile/README.md).
 
 ## 6. Engineering Discipline
@@ -70,7 +71,8 @@ The engineering thesis behind it is listed in [writing.md](../writing.md).
 - Publishing promotes a digest pinned sha artifact and runs smoke and flow checks after the latest tag (publish workflow, 2026-10-26, infrastructure/.github/workflows/publish-compose.yml).
 - Coverage gates exclude config and DTO packages and application classes by policy (JaCoCo config, 2026-10-26, inventory-service/pom.xml).
 - Bus refresh covers business services only and gateway route edits need a restart (config doc, 2026-10-26, centralized-configuration/README.md).
-- Known gaps live in each repository's Current limitations; gateway routing has no integration tests and some OpenAPI paths are stale (gateway README, 2026-10-26, api-gateway/README.md).
+- Gateway routing has no integration tests (gateway README, 2026-10-27, api-gateway/README.md#current-limitations).
+- Some OpenAPI paths and examples are stale (unit and inventory READMEs, 2026-10-27, unit-of-measure-service/README.md#current-limitations and inventory-service/README.md#current-limitations).
 - Compose defaults replace env files and the release version script stays manual (operations doc, 2026-10-26, infrastructure/docs/operations.md).
 
 ## 7. Reproduce
