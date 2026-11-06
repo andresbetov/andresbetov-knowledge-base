@@ -1,6 +1,6 @@
 # Andres Betov Knowledge Base
 
-Public portfolio of Julian Andres Bermudez Tovar (Andres Betov): Systems Engineer (Universidad ECCI, October 2026) focused on backend engineering with a quantitative and data and ML edge. Based in Bogotá D.C., Colombia.
+Public portfolio of Julian Andres Bermudez Tovar (@andresbetov): Systems Engineer (Universidad ECCI, October 2026) focused on backend engineering with a quantitative and data and ML edge. Based in Bogotá D.C., Colombia.
 
 Contact: [GitHub](https://github.com/andresbetov) / [LinkedIn](https://www.linkedin.com/in/andresbetov/) / [X](https://x.com/andresbetov) / [Email](mailto:info.andresbetov@gmail.com).
 
