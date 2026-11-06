@@ -1,7 +1,7 @@
 ---
 title: "Certificates"
 slug: certificates
-last_verified: 2026-10-26
+last_verified: 2026-11-06
 ---
 
 # Certificates
@@ -12,7 +12,7 @@ Verified certificates relevant to the engineering work in this knowledge base.
 
 | Certificate | Issuer | Result | Issued | Expiry | Verification |
 | --- | --- | --- | --- | --- | --- |
-| EF SET English Certificate | EF SET | C1 Advanced, 66/100 | 01 September 2025 | None | [Public record](https://cert.efset.org/UKby9y) |
+| EF SET English Certificate | EF SET | C1 Advanced, 66/100 | 01 September 2025 | Does not expire | [Public record](https://cert.efset.org/UKby9y) |
 
 ## EF SET English Certificate
 

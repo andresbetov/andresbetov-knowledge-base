@@ -12,7 +12,9 @@ Agent contract for this docs-only overview knowledge base. The human entrypoint 
 ## 2. Source-of-truth hierarchy
 
 - On conflict, frontmatter `source_of_truth` wins; KB is overview-only.
-- `source_of_truth` names the authoritative repository; the Source Map path and citation name the exact artifact.
+- `source_of_truth` names the authoritative repository; for multi-repo projects it is the entry point and the most specific source artifact wins.
+- Every project page states at least one known gap in Section 6 or Key Numbers.
+- Entrypoints use path#anchor for a section, a bare path for a whole file or directory, and path:Symbol for code.
 - Source repos outrank this KB for numbers and behavior.
 - Never invent numbers or dates or statuses.
 - Section 5 of project pages allows zero TBD entries.
@@ -32,6 +34,7 @@ Agent contract for this docs-only overview knowledge base. The human entrypoint 
 - Project pages live in projects/ with one file per slug.
 - Root content pages are education.md, certificates.md, writing.md, engineering.md and skills.md.
 - Project frontmatter keys in order: title / slug / type / status / version / repos / source_of_truth / stack / last_verified.
+- Allowed type values: backend-system / ml-research / data-pipeline; allowed status values: active / archived / research-only.
 - Root content frontmatter keys: title, slug, last_verified.
 - Filename must match frontmatter slug exactly.
 - Project pages use the full template and keep 8-section order immutable.

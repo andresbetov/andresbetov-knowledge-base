@@ -4,7 +4,15 @@ Public portfolio of Julian Andres Bermudez Tovar (Andres Betov): backend systems
 
 Contact: [GitHub](https://github.com/andresbetov) / [LinkedIn](https://www.linkedin.com/in/andresbetov/) / [X](https://x.com/andresbetov) / [Email](mailto:info.andresbetov@gmail.com).
 
-This knowledge base is the primary AI-agent context for the work; it provides an overview only, with full details maintained in the source repositories.
+This knowledge base is the entry point for AI-agent context on the work; it provides an overview only, with full details maintained in the source repositories.
+
+## At a Glance
+
+- Builds: Spring Cloud services and Python data and ML pipelines with reproducible runs.
+- Proof: three public projects, one DOI-backed thesis, two verified degrees and one language certificate.
+- Rigor: tests and CI in all three; coverage gates in Elara inventory and unit plus Clustering; ADRs in Clustering and SP500; one locked holdout in SP500.
+- Scope: reference and research work with no production users.
+- Level: new graduate in Systems Engineering (Universidad ECCI, October 2026); current work is solo academic and reference projects.
 
 Agents: read [AGENTS.md](AGENTS.md) before editing.
 

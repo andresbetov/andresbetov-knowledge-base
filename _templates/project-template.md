@@ -3,11 +3,11 @@ title: "Example"
 slug: project-template
 type: backend-system
 status: active
-version: 3
+version: 5
 repos: ["https://example.com/repo"]
 source_of_truth: "https://example.com/repo"
 stack: ["python", "sqlite"]
-last_verified: 2026-10-26
+last_verified: 2026-11-06
 ---
 
 # Example
@@ -27,7 +27,7 @@ Scope covers purpose and users.
 | Area | Repo/Path | Entrypoint |
 | --- | --- | --- |
 | API | https://example.com/repo | src/app.py:main |
-| Docs | https://example.com/docs | docs/index.md:overview |
+| Docs | https://example.com/docs | docs/index.md#overview |
 | Tests | https://example.com/repo | tests/test_app.py:suite |
 
 ## 4. System at a Glance
@@ -43,6 +43,7 @@ Scope covers purpose and users.
 - Tests run with tests/test_app.py:suite.
 - Review happens before each publish.
 - Changes keep docs and code aligned.
+- Known gaps: name at least one limitation and its source.
 
 ## 7. Reproduce
 1. Open `docs/index.md` and read overview.

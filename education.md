@@ -1,7 +1,7 @@
 ---
 title: "Education"
 slug: education
-last_verified: 2026-10-27
+last_verified: 2026-11-06
 ---
 
 # Education
