@@ -20,7 +20,7 @@ Config Server serves versioned non secret settings and Vault supplies dev creden
 RabbitMQ carries config refresh events and health gates order startup.
 Two delivery modes exist as a source build and a published demo.
 Goal is a readable reference implementation rather than a production deployment.
-Solo design and implementation from 2025 to 2026.
+Solo design and implementation from February 2025 to June 2026; a documentation phase from February to June 2025 preceded implementation.
 The engineering thesis behind it is listed in [writing.md](../writing.md).
 
 ## 2. Non-Goals
