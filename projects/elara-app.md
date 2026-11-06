@@ -6,7 +6,7 @@ status: active
 version: 5
 repos: ["https://github.com/elara-app/api-gateway", "https://github.com/elara-app/discovery-service", "https://github.com/elara-app/config-service", "https://github.com/elara-app/inventory-service", "https://github.com/elara-app/unit-of-measure-service", "https://github.com/elara-app/centralized-configuration", "https://github.com/elara-app/infrastructure", "https://github.com/elara-app/.github"]
 source_of_truth: "https://github.com/elara-app/.github"
-stack: ["java-21", "spring-boot", "spring-cloud", "eureka", "config-server"]
+stack: ["java-21", "spring-boot", "spring-cloud", "eureka", "config-server", "postgresql", "rabbitmq", "vault", "docker-compose"]
 last_verified: 2026-11-06
 ---
 

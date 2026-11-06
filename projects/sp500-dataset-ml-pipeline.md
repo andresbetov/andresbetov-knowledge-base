@@ -6,7 +6,7 @@ status: active
 version: 5
 repos: ["https://github.com/andresbetov/sp500-dataset-ml-pipeline"]
 source_of_truth: "https://github.com/andresbetov/sp500-dataset-ml-pipeline"
-stack: ["python-3.12", "pandas", "xgboost", "scikit-learn", "pyarrow", "uv"]
+stack: ["python-3.12+", "pandas", "xgboost", "scikit-learn", "pyarrow", "uv"]
 last_verified: 2026-11-06
 ---
 
