@@ -1,6 +1,6 @@
 # Andres Betov Knowledge Base
 
-Public portfolio of Julian Andres Bermudez Tovar (Andres Betov): backend systems and applied data and ML work. Based in Bogotá D.C., Colombia.
+Public portfolio of Julian Andres Bermudez Tovar (Andres Betov): Systems Engineer (Universidad ECCI, October 2026) focused on backend engineering with a quantitative and data and ML edge. Based in Bogotá D.C., Colombia.
 
 Contact: [GitHub](https://github.com/andresbetov) / [LinkedIn](https://www.linkedin.com/in/andresbetov/) / [X](https://x.com/andresbetov) / [Email](mailto:info.andresbetov@gmail.com).
 
@@ -12,7 +12,7 @@ This knowledge base is the entry point for AI-agent context on the work; it prov
 - Proof: three public projects, one DOI-backed thesis, two verified degrees and one language certificate.
 - Rigor: tests and CI in all three; coverage gates in Elara inventory and unit plus Clustering; ADRs in Clustering and SP500; one locked holdout in SP500.
 - Scope: reference and research work with no production users.
-- Level: new graduate in Systems Engineering (Universidad ECCI, October 2026); current work is solo academic and reference projects.
+- Open to: backend, microservices, fintech and AI-driven systems roles.
 
 Agents: read [AGENTS.md](AGENTS.md) before editing.
 
