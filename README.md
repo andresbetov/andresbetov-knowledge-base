@@ -28,7 +28,7 @@ Agents: read [AGENTS.md](AGENTS.md) before editing.
 
 | Page | Covers |
 | --- | --- |
-| [Education](education.md) | Two Universidad ECCI credentials and verification links |
+| [Education](education.md) | Universidad ECCI credentials and Saber Pro 2025 positioning |
 | [Certificates](certificates.md) | EF SET C1 English certificate |
 | [Writing](writing.md) | Long-form thesis behind Elara App |
 | [Engineering](engineering.md) | Cross-project principles and evidence |
